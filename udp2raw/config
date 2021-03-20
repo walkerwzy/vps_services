@@ -1,0 +1,7 @@
+-s
+-l 0.0.0.0:39900
+-r 138.197.194.82:29900
+-k walker
+--raw-mode faketcp
+--auth-mode hmac_sha1
+-a

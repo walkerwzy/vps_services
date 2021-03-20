@@ -1,0 +1,13 @@
+[Unit]
+Description=udp2raw Service
+After=network.target
+
+[Service]
+Type=simple
+User=root
+Restart=on-failure
+RestartSec=5s
+ExecStart=/var/vps_services/udp2raw/udp2raw_amd64 --conf-file /var/vps_services/udp2raw/config
+
+[Install]
+WantedBy=multi-user.target
